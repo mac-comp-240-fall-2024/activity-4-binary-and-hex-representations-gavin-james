@@ -6,6 +6,9 @@
 // functions defined in the helper file binary_convert.c
 #include "binary_convert.h"
 
+
+// Gavin & James
+
 // Declarations of functions defined below
 
 
@@ -37,10 +40,11 @@ void print_all_pos_bytes() {
 
     i = 0x00;
     while (1) {  // while true
+        char converted = convert_to_string(i);
         // TODO: call conversion function to make string rep for binary
         
     	// TODO: add to this print statement to print both hex and binary
-	    printf("Decimal: %hhu | Hex:  | Binary: \n", i);
+	    printf("Decimal: %hhu | Hex: %x | Binary: %s \n", i,i,converted);
 
     	// We need this to manage memory--remember that each memory allocation
     	// requires a matching free()!
